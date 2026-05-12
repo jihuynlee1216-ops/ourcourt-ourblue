@@ -96,7 +96,7 @@ export function Hero() {
                 size={14}
                 className="text-ball-200 transition-transform group-hover:rotate-12"
               />
-              퀴즈 풀고 데이비스컵 가자!
+              퀴즈 풀고 데이비스컵 예매하러 가자!
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
                 <path
                   d="M9 6l6 6-6 6"
