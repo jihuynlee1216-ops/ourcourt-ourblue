@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Players } from "@/components/Players";
+import { PredictBanner } from "@/components/PredictBanner";
 import { Quiz } from "@/components/Quiz";
 import { TennisGuide } from "@/components/TennisGuide";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Players />
       <TennisGuide />
       <Quiz />
+      <PredictBanner />
       <CTA />
       <Footer />
     </main>
