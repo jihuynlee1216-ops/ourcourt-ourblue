@@ -38,8 +38,8 @@ export function Bracelet({ className = "" }: { className?: string }) {
         <Image
           src="/images/keyring.png"
           alt="BLEUM 선수 유니폼 아크릴 키링 — 100점 달성 기념 굿즈"
-          width={1178}
-          height={762}
+          width={1536}
+          height={1024}
           priority={false}
           className="relative h-auto w-full drop-shadow-[0_24px_36px_rgba(15,34,112,0.22)]"
         />
