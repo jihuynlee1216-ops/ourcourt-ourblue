@@ -4,30 +4,30 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 /**
- * Real photo of the BLEUM tennis bracelet given out at the event.
- * Wrapped with a soft glow + subtle entrance animation so it feels
- * like a special reward without altering the actual product image.
+ * Reward asset displayed on the 100-pt quiz result screen.
+ * (Historically named `Bracelet` — keeping the name for backwards-compatible
+ * imports; the actual artwork is now the BLEUM player-jersey acrylic keyring set.)
  */
 export function Bracelet({ className = "" }: { className?: string }) {
   return (
     <div className={"relative mx-auto w-full max-w-md select-none " + className}>
-      {/* soft halo behind the bracelet */}
+      {/* soft halo behind the keyrings */}
       <motion.div
         aria-hidden
-        className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-40 rounded-full"
+        className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-44 rounded-full"
         initial={{ opacity: 0 }}
-        animate={{ opacity: [0.25, 0.55, 0.25] }}
+        animate={{ opacity: [0.2, 0.5, 0.2] }}
         transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
         style={{
           background:
-            "radial-gradient(closest-side, rgba(126,155,255,0.55), rgba(126,155,255,0))",
+            "radial-gradient(closest-side, rgba(126,155,255,0.5), rgba(126,155,255,0))",
         }}
       />
 
       {/* sparkle dots layered on top */}
-      <Sparkle className="absolute left-[12%] top-[18%]" delay={0} />
-      <Sparkle className="absolute right-[18%] top-[12%]" delay={0.6} />
-      <Sparkle className="absolute right-[10%] bottom-[18%]" delay={1.1} />
+      <Sparkle className="absolute left-[10%] top-[8%]" delay={0} />
+      <Sparkle className="absolute right-[14%] top-[6%]" delay={0.6} />
+      <Sparkle className="absolute right-[6%] bottom-[24%]" delay={1.1} />
 
       <motion.div
         initial={{ scale: 0.92, opacity: 0, y: 10 }}
@@ -36,10 +36,10 @@ export function Bracelet({ className = "" }: { className?: string }) {
         className="relative"
       >
         <Image
-          src="/images/bracelet.png"
-          alt="BLEUM 테니스 팔찌 — 100점 달성 기념 굿즈"
-          width={1200}
-          height={620}
+          src="/images/keyring.png"
+          alt="BLEUM 선수 유니폼 아크릴 키링 — 100점 달성 기념 굿즈"
+          width={1178}
+          height={762}
           priority={false}
           className="relative h-auto w-full drop-shadow-[0_24px_36px_rgba(15,34,112,0.22)]"
         />

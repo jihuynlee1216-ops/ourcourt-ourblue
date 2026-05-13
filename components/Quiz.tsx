@@ -351,7 +351,7 @@ export function Quiz() {
                   >
                     <Bracelet />
                     <p className="mt-4 text-sm font-bold text-royal-700">
-                      100점 달성 기념 BLEUM 테니스 팔찌를 드립니다!
+                      100점 달성 기념 BLEUM 선수 유니폼 아크릴 키링을 드립니다!
                     </p>
                   </motion.div>
                 )}
