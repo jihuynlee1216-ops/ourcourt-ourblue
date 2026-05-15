@@ -83,8 +83,8 @@ export function CTA() {
               <Image
                 src="/images/towel.png"
                 alt="BLUEM 응원타월 — OUR COURT, OUR BLUE 시그니처"
-                width={987}
-                height={428}
+                width={1525}
+                height={836}
                 priority={false}
                 className="h-auto w-full drop-shadow-[0_28px_42px_rgba(0,0,0,0.35)]"
               />
