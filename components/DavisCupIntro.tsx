@@ -72,6 +72,41 @@ export function DavisCupIntro() {
           />
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mx-auto mt-6 max-w-3xl rounded-3xl bg-gradient-to-br from-royal-500 to-royal-700 p-6 text-white shadow-card md:mt-8 md:p-8"
+        >
+          <div className="flex flex-col items-center gap-3 text-center md:gap-4">
+            <span className="inline-flex items-center rounded-full bg-white/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] backdrop-blur">
+              2026 Davis Cup · Korea
+            </span>
+            <h3 className="text-2xl font-extrabold leading-tight md:text-3xl">
+              2026 데이비스컵, 서울에서 열립니다
+            </h3>
+            <div className="grid w-full grid-cols-1 gap-3 pt-2 sm:grid-cols-2 md:gap-4">
+              <div className="rounded-2xl bg-white/10 px-4 py-3 backdrop-blur md:px-5 md:py-4">
+                <div className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/70">
+                  Venue
+                </div>
+                <div className="mt-1 text-base font-extrabold md:text-lg">
+                  서울 올림픽공원 테니스 경기장
+                </div>
+              </div>
+              <div className="rounded-2xl bg-white/10 px-4 py-3 backdrop-blur md:px-5 md:py-4">
+                <div className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/70">
+                  Date
+                </div>
+                <div className="mt-1 text-base font-extrabold md:text-lg">
+                  2026.09.19(토) ~ 09.20(일)
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         <div className="mt-8 grid grid-cols-1 gap-4 md:mt-10 md:grid-cols-2 md:gap-6">
           {facts.map((f, i) => (
             <motion.div
